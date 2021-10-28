@@ -3,6 +3,8 @@
 
 #include "SDL.h"
 #include "TextureManager.h"
+#include "GameObject.h"
+#include "Player.h"
 
 class Game {
 public:
@@ -19,11 +21,13 @@ public:
 private:
   SDL_Window* m_pWindow;
   SDL_Renderer* m_pRenderer;
-  //SDL_Texture* m_pTexture;
 
   int m_currentFrame;
 
   bool m_bRunning;
+
+  GameObject m_go;
+  Player m_player;
 };
 
 #endif
