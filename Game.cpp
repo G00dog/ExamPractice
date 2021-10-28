@@ -1,6 +1,10 @@
 #include "Game.h"
 #include "SDL_image.h"
 #include "TextureManager.h"
+#include "GameObject.h"
+#include "Player.h"
+
+Game* Game::s_pInstance = 0;
 
 bool Game::init(const char* title, int xpos, int ypos, int width, int height, int flags)
 {
